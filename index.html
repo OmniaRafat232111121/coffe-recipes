@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coffe Recipe</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/style.css">
+ 
+
+<!--scrollbar-->
+<script src="https://unpkg.com/scrollreveal"></script>
+   <!--font awesome-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <main >
+  <header class="header">
+    <div class="container text-center">
+      <div class="row m-4">
+        <h1 class="text-primary display-4 fw-normal">Coffee Brew Recipes</h1>
+       
+      </div>
+    </div>
+  
+  <div class="container">
+    <form id="recipe-form" class="p-4 m-4 row shadow-sm rounded-3 border border-primary">
+      <div class="form-group col-md-4 my-2">
+        <label for="name">Name of Brew</label>
+        <input required autocomplete="off" type="text" id="name" class="form-control" placeholder="e.g., Morning Brew">
+      </div>
+      <div class="form-group col-md-4 my-2">
+        <label for="method">Brew Method</label>
+        <input required autocomplete="off" type="text" id="method" class="form-control" placeholder="e.g., v60 Pour Over">
+      </div>
+      <div class="form-group col-md-4 my-2">
+        <label for="roast">Roast</label>
+        <input required autocomplete="off" type="text" id="roast" class="form-control" placeholder="e.g., Full City">
+      </div>
+      <div class="form-group col-md-4 my-2">
+        <label for="grind">Grind Size</label>
+        <input required autocomplete="off" type="text" id="grind" class="form-control" placeholder="e.g., 30">
+      </div>
+      <div class="form-group col-md-4 my-2">
+        <label for="ratio">Ratio</label>
+        <input required autocomplete="off" type="text" id="ratio" class="form-control" placeholder="e.g., 1:16">
+      </div>
+      <div class="form-group col-md-4 my-2">
+        <label for="note">Notes (optional)</label>
+        <input autocomplete="off" type="text" id="note" class="form-control">
+      </div>
+      <div class="form-group mt-4">
+        <input type="submit" value="Add Recipe" class="btn btn-primary">
+      </div>
+    </form>
+    <div class="container">
+      <div class="row m-4 border-bottom border-3 border-primary">
+        <p class="h3 text-primary">Saved Recipes</p>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mx-4 my-6 text-center" id="recipe-container">
+    </div>
+  </div>
+</header>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.6/purify.min.js" integrity="sha512-DJjvM/U3zCRpzrYboJgg23iLHapWcS2rlo7Ni18Cdv+FMs6b3gUF7hQihztj4uVkHHfUwk7dha97jVzRqUJ7hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/main.js" ></script>
+</body>
+</html>
